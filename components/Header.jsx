@@ -12,10 +12,12 @@ const Header = () => {
             </h1>
         </Link>
 
-        <div className="hidden xl:flex">
+        <div className="hidden xl:flex items-center gap-8">
             <Nav/>
             <Link href="/contact">
-                Hire me 
+                <Button>
+                    Hire me
+                </Button>
             </Link>
         </div>
 
