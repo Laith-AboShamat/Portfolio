@@ -125,7 +125,7 @@ const Work = () => {
                     return(
                       <SwiperSlide key={index} className='w-full'>
                         <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
-                          <div></div>
+                          <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                           <div className='relative w-full h-full'>
                             <Image
                              src={project.image}
@@ -137,6 +137,7 @@ const Work = () => {
                       </SwiperSlide>
                     );
                   })}
+                  
               </Swiper>
             </div>
           </div>
