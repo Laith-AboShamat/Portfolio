@@ -12,7 +12,7 @@ import Image from 'next/image';
 import WorkSliderBtn from '@/components/WorkSliderBtn';
 
 
-const projects = [
+const webprojects = [
   {
     num: '01',
     category: 'frontend',
@@ -47,12 +47,12 @@ const projects = [
 
 
 const Work = () => {
-  const [project, setProject] = useState(projects[0]);
+  const [project, setProject] = useState(webprojects[0]);
 
   const handleSlideChange = (swiper) =>{
     const currentIndex = swiper.activeIndex;
 
-    setProject(projects[currentIndex]);
+    setProject(webprojects[currentIndex]);
   };
 
   return (
@@ -122,7 +122,7 @@ const Work = () => {
                 className='xl:h-[520px] mb-12'
                 onSlideChange={handleSlideChange}
                 >
-                  {projects.map((project, index)=>{
+                  {webprojects.map((project, index)=>{
                     return(
                       <SwiperSlide key={index} className='w-full'>
                         <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
