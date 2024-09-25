@@ -18,7 +18,7 @@ const projects = [
     category: 'frontend',
     title: 'project 1',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    stack: [{name: 'Html 5'},{name: 'Css 3'},{name: 'JavaScript'}],
+    stack: [{name: 'Html 5'}, {name: 'Css 3'}, {name: 'JavaScript'}],
     image: '/assets/work/thumb1.png',
     live: "",
     github: "",
@@ -28,7 +28,7 @@ const projects = [
     category: 'fullstack',
     title: 'project 2',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    stack: [{name: 'Next.js'},{name: 'Tailwind.css'}],
+    stack: [{name: 'Next.js'}, {name: 'Tailwind.css'}, {name: 'Tailwind.css'}],
     image: '/assets/work/thumb2.png',
     live: "",
     github: "",
@@ -38,7 +38,7 @@ const projects = [
     category: 'Mobile Development',
     title: 'project 3',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    stack: [{name: 'Flutter'},{name: 'Firebase'}],
+    stack: [{name: 'Flutter'}, {name: 'Firebase'}, {name: 'Tailwind.css'}],
     image: '/assets/work/thumb3.png',
     live: "",
     github: "",
@@ -75,7 +75,7 @@ const Work = () => {
                     </h2>
                     {/* project description */}
                     <p className='text-white/60'>{project.description}</p>
-                    <ul className='flex gap-4'>
+                    <ul className='flex gap-4 w-[50px]'>
                       {project.stack.map((item, index)=>{
                         return(
                           <li key={index} className='text-xl text-accent'>
@@ -115,7 +115,7 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full xl-w-[50%]'>
+            <div className='w-full xl:w-[50%]'>
               <Swiper 
                 spaceBetween={30} 
                 slidesPerView={1} 
