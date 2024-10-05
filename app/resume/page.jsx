@@ -1,11 +1,11 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaAws, FaPython } from "react-icons/fa";
+import {SiTailwindcss, SiNextdotjs, SiFlutter, SiMongodb, SiFirebase, SiExpress,} from "react-icons/si";
 
 const about = {
   title: 'About me',
-  description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem vero culpa officiis ut minus facilis debitis. Dignissimos qui aut fugit esse illo dolorem quis vel veritatis quia. Natus, porro reiciendis!',
+  description: 'Full Stack Developer with 2+ years of experience in web applications. Proficient in ReactJS, Tailwind, Next.js, and the MERN stack (MongoDB, Express, Node.js). Experienced in using AWS services to optimize performance, with a focus on responsive design and collaborative projects.',
   info: [
     {
       fieldName: "Name",
@@ -42,7 +42,7 @@ const about = {
 const experince = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam, enim quod minus molestiae dolorem deserunt perspiciatis dolorum repellendus aut, facilis odio. Saepe esse sunt odio recusandae, aliquam a rem.",
+  description: "As a freelance Frontend Web Developer with over 2 years of experience, I specialize in creating responsive and user-friendly websites using HTML, CSS, JavaScript, ReactJS, and Tailwind. I also work on mobile development and continually enhance my skills, including training in AWS at Pathtech. My focus is on delivering high-quality projects tailored to client needs while staying current with the latest frontend trends.",
   items: [
     {
       company: "PaliNetwork",
@@ -70,7 +70,7 @@ const experince = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam, enim quod minus molestiae dolorem deserunt perspiciatis dolorum repellendus aut, facilis odio. Saepe esse sunt odio recusandae, aliquam a rem.",
+  description: "I hold a Bachelor's in Information Technology from NNU and have expanded my skills through internships at PathTech as a Full Stack Developer and MERN Stack Developer Trainee. I've also gained expertise in AWS Fundamentals, Flutter & Firebase, React, and responsive web development through various online courses. My continuous learning helps me stay updated with the latest technologies in both frontend and backend development.",
   items: [
     {
       insititution: "PathTech",
@@ -112,7 +112,7 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem dolore, in sed, et odio nulla officiis accusamus distinctio placeat expedita ipsam ab labore ex sapiente! Iure exercitationem placeat ullam officia.",
+  description: "I have a solid foundation in web and mobile development, with expertise in HTML5, CSS3, JavaScript, Tailwind CSS, and React.js. My backend skills include Node.js, Express, MongoDB, and Next.js, while I also have experience with mobile frameworks like Flutter and Firebase. Additionally, I’m proficient in Python, Figma for design, and cloud services like AWS, ensuring a comprehensive skill set for modern development projects.",
   skillList: [
     {
       icon: <FaHtml5/>,
@@ -127,24 +127,48 @@ const skills = {
       name: "javascript",
     },
     {
-      icon: <FaReact/>,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs/>,
-      name: "next.js",
-    },
-    {
       icon: <SiTailwindcss/>,
       name: "tailwind.css",
+    },
+    {
+      icon: <FaReact/>,
+      name: "react.js",
     },
     {
       icon: <FaNodeJs/>,
       name: "node.js",
     },
     {
+      icon: <SiExpress/>,
+      name: "Express",
+    },
+    {
+      icon: <SiMongodb/>,
+      name: "Mongodb",
+    },
+    {
+      icon: <SiNextdotjs/>,
+      name: "next.js",
+    },
+    {
       icon: <FaFigma/>,
       name: "figma",
+    },
+    {
+      icon: <SiFlutter/>,
+      name: "Flutter",
+    },
+    {
+      icon: <SiFirebase/>,
+      name: "Firebase",
+    },
+    {
+      icon: <FaPython/>,
+      name: "Python",
+    },
+    {
+      icon: <FaAws/>,
+      name: "Amazon Web Services",
     },
   ],
 };
@@ -246,15 +270,16 @@ const Resume = () => {
                 </TabsContent>
 
                 <TabsContent value="skills" className="w-full h-full">
-                  <div className="flex flex-col gap-[30px]">
+                  <div className="flex flex-col gap-[30px] mb-[20px]">
                       <div className="flex flex-col gap-[30px] text-center xl:text-left">
                         <h3 className="text-4xl font-bold">
                           {skills.title}
                         </h3>
-                        <p className="max-w-[600px] text-whit/60 mx-auto xl:mx-0">
+                        <p className="max-w-[750px] text-white/60 mx-auto xl:mx-0">
                           {skills.description}
                         </p>
-                        <ul className="grid grid-cols-2 sm:grid-col-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                        
+                        <ul className="grid grid-cols-2 sm:grid-col-3 md:grid-cols-5 gap-4 xl:gap-[30px]">
                           {skills.skillList.map((skill, index)=>{
                             return (
                               <li key={index}>
