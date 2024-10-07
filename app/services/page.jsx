@@ -9,25 +9,25 @@ const services = [
     num: '01',
     title: 'Web Development',
     description: "Building responsive and modern websites tailored to your needs.",
-    href: ""
+    href: "/work"
   },
   {
     num: '02',
     title: 'Mobile Development',
     description: "Creating intuitive and efficient mobile apps for seamless experiences.",
-    href: ""
+    href: "/work"
   },
   {
     num: '03',
     title: 'UI/UX Design',
     description: "Designing user interfaces that are both visually appealing and easy to use.",
-    href: ""
+    href: "/work"
   },
   {
     num: '04',
     title: 'Accounting & ERP',
     description: "Implementing smart accounting solutions and ERP systems for better business management.",
-    href: ""
+    href: "/work"
   },
 ];
 

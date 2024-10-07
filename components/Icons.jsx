@@ -36,9 +36,9 @@ const Icons = () => {
   return (
     <section className="xl:mt-8">
       <div className="container mx-auto overflow-hidden">
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap">
           {icons.map((item) => (
-            <div key={item.id} className="flex items-center justify-center w-20 p-2">
+            <div key={item.id} className="flex items-center w-20 p-2">
               <motion.div
                 onClick={() => setSelectedId(item.id)}
                 className="w-12 h-12 text-primary bg-accent rounded-full flex items-center justify-center text-3xl cursor-pointer"
