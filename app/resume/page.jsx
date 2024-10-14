@@ -5,7 +5,7 @@ import {SiTailwindcss, SiNextdotjs, SiFlutter, SiMongodb, SiFirebase, SiExpress,
 
 const about = {
   title: 'About me',
-  description: 'Full Stack Developer with 2+ years of experience in web applications. Proficient in ReactJS, Tailwind, Next.js, and the MERN stack (MongoDB, Express, Node.js). Experienced in using AWS services to optimize performance, with a focus on responsive design and collaborative projects.',
+  description: 'Experienced Full Stack Developer skilled in ReactJS, Tailwind, Next.js, and MERN stack. Proficient with AWS services, focusing on responsive design and optimized performance.',
   info: [
     {
       fieldName: "Name",
@@ -42,7 +42,7 @@ const about = {
 const experince = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: "As a freelance Frontend Web Developer with over 2 years of experience, I specialize in creating responsive and user-friendly websites using HTML, CSS, JavaScript, ReactJS, and Tailwind. I also work on mobile development and continually enhance my skills, including training in AWS at Pathtech. My focus is on delivering high-quality projects tailored to client needs while staying current with the latest frontend trends.",
+  description: "Freelance Frontend Developer with expertise in HTML, CSS, JavaScript, ReactJS, and Tailwind. Trained in AWS at Pathtech, focused on delivering responsive and high-quality websites.",
   items: [
     {
       company: "PaliNetwork",
@@ -64,13 +64,18 @@ const experince = {
       postion: "Freelance Web Developer",
       duration: "2022 - 2023"
     },
+    {
+      company: "Nablus Municipality",
+      postion: "Business Intelligence (BI) Analyst",
+      duration: "2021"
+    },
   ]
 };
 
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
-  description: "I hold a Bachelor's in Information Technology from NNU and have expanded my skills through internships at PathTech as a Full Stack Developer and MERN Stack Developer Trainee. I've also gained expertise in AWS Fundamentals, Flutter & Firebase, React, and responsive web development through various online courses. My continuous learning helps me stay updated with the latest technologies in both frontend and backend development.",
+  description: "Bachelor’s in IT from NNU, with additional training in AWS, MERN, Flutter, and React. Committed to continuous learning for modern development.",
   items: [
     {
       insititution: "PathTech",
@@ -112,7 +117,7 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description: "I have a solid foundation in web and mobile development, with expertise in HTML5, CSS3, JavaScript, Tailwind CSS, and React.js. My backend skills include Node.js, Express, MongoDB, and Next.js, while I also have experience with mobile frameworks like Flutter and Firebase. Additionally, I’m proficient in Python, Figma for design, and cloud services like AWS, ensuring a comprehensive skill set for modern development projects.",
+  description: "Solid foundation in web and mobile development with expertise in HTML, CSS, JavaScript, React.js, Tailwind, Node.js, Next.js, and AWS.",
   skillList: [
     {
       icon: <FaHtml5/>,
