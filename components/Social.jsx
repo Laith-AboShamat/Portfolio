@@ -6,7 +6,7 @@ const socials = [
     {icon: <FaLinkedin/>, path:"https://www.linkedin.com/in/laith-aboshamat-9170b7302"},
     {icon: <FaYoutube/>, path:"https://www.youtube.com/@LaithAboShamat"},
     {icon: <FaTwitter/>, path:"https://x.com/LaithAboShamat"},
-    {icon: <FaFacebook/>, path:"https://www.facebook.com/profile.php?id=100007745179158"},
+    {icon: <FaFacebook/>, path:"https://www.facebook.com/profile.php?id=61566581313995"},
 ];
 
 const Social = ({containerStyles, iconStyles})=>{
