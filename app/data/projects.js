@@ -22,7 +22,7 @@ const webprojects = [
         "/assets/work/project1/9.png",
         "/assets/work/project1/10.png",
       ],
-      live: "#",
+      live: "https://bufanda.vercel.app/",
       github: "https://github.com/Laith-AboShamat/Bufanda",
     },
     {
@@ -45,7 +45,7 @@ const webprojects = [
           "/assets/work/project2/8.png",
           "/assets/work/project2/9.png",
         ],
-      live: "#",
+      live: "https://bufanda-admin.vercel.app/",
       github: "https://github.com/Laith-AboShamat/bufanda_admin",
     },
     {
