@@ -42,7 +42,7 @@ const about = {
 const experince = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: "As a freelance Frontend Web Developer with over 2 years of experience, I specialize in creating responsive and user-friendly websites using HTML, CSS, JavaScript, ReactJS, and Tailwind. I also work on mobile development and continually enhance my skills, including training in AWS at Pathtech. My focus is on delivering high-quality projects tailored to client needs while staying current with the latest frontend trends.",
+  description: "As a freelance Software Engineer with over 2 years of experience, I specialize in creating responsive and user-friendly websites using ReactJS, and Tailwind. I also work on mobile development and continually enhance my skills, including training in AWS at Pathtech. My focus is on delivering high-quality projects tailored to client needs while staying current with the latest frontend trends.",
   items: [
     {
       company: "PaliNetwork",
@@ -61,8 +61,13 @@ const experince = {
     },
     {
       company: "Freelance",
+      postion: "Freelance Mobile Application Developer",
+      duration: "2023 - Present"
+    },
+    {
+      company: "Freelance",
       postion: "Freelance Web Developer",
-      duration: "2022 - 2023"
+      duration: "2022 - Present"
     },
   ]
 };

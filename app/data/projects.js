@@ -54,9 +54,9 @@ const webprojects = [
       title: "PaliNetwork",
       description: "A global Palestinian business directory designed to empower and connect Palestinian and Pro-Palestinian businesses worldwide. The platform enables users to discover, connect, and support Palestinian professionals and services while fostering community engagement and economic growth.",
       stack: [
-        { name: "Laravel" },
-        { name: "React" },
-        { name: "Tailwind CSS" }
+        { name: "React.js" },
+        { name: "Tailwind CSS" },
+        { name: "MongoDB" },
       ],
       image: [
         "/assets/work/project3/1.png",
@@ -77,7 +77,7 @@ const webprojects = [
       title: "Nursing Shellular",
       description: "A modern scheduling and management app designed for nursing professionals and healthcare facilities. Nursing Shellular simplifies shift scheduling, staff communication, and task management, ensuring efficient operations and improved patient care. Built with scalability and reliability in mind, it leverages cloud infrastructure for seamless performance.",
       stack: [
-        { name: "React" },
+        { name: "React.js" },
         { name: "AWS" },
         { name: "Tailwind CSS" },
       ],

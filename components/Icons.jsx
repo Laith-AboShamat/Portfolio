@@ -22,9 +22,9 @@ const icons = [
   { icon: <FaAws />, name: "AWS", id: "aws", desc: "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services." },
 ];
 
-const Icons = () => {
+const Icons = ({ name }) => {
   const [selectedId, setSelectedId] = useState(null);
-  
+
   useEffect(() => {
     if (selectedId) {
       document.body.style.overflow = 'hidden';
@@ -33,56 +33,54 @@ const Icons = () => {
     }
   }, [selectedId]);
 
-  return (
-    <section className="xl:mt-8">
-      <div className="container mx-auto overflow-hidden">
-        <div className="flex flex-wrap justify-center">
-          {icons.map((item) => (
-            <div key={item.id} className="flex items-center justify-center w-20 p-2">
-              <motion.div
-                onClick={() => setSelectedId(item.id)}
-                className="w-12 h-12 text-primary bg-accent rounded-full flex items-center justify-center text-3xl cursor-pointer"
-              >
-                {item.icon}
-              </motion.div>
-            </div>
-          ))}
-        </div>
+  const iconData = icons.find((icon) => icon.name === name);
 
-        <AnimatePresence>
-          {selectedId && (
+  if (!iconData) {
+    return null;
+  }
+
+  return (
+    <div className="flex items-center justify-center w-20 p-2">
+      <motion.div
+        onClick={() => setSelectedId(iconData.id)}
+        className="w-12 h-12 text-primary bg-accent rounded-full flex items-center justify-center text-3xl cursor-pointer"
+      >
+        {iconData.icon}
+      </motion.div>
+
+      <AnimatePresence>
+        {selectedId === iconData.id && (
+          <motion.div
+            key={selectedId}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            className="fixed inset-0 flex items-center justify-center p-4 z-50"
+          >
             <motion.div
-              key={selectedId}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="fixed inset-0 flex items-center justify-center p-4"
+              className="bg-gray-900 rounded-lg shadow-lg flex flex-col items-center gap-2 max-w-sm w-full p-4 sm:p-6 z-50"
+              style={{ width: '100%', maxWidth: '400px' }}
             >
-              <motion.div
-                className="bg-gray-900 rounded-lg shadow-lg flex flex-col items-center gap-2 max-w-sm w-full p-4 sm:p-6"
-                style={{ width: '100%', maxWidth: '400px' }}
+              <div className="text-5xl text-accent">
+                {iconData.icon}
+              </div>
+              <h2 className="text-2xl text-white text-center">
+                {iconData.name}
+              </h2>
+              <p className="text-md text-gray-300 text-center mt-2">
+                {iconData.desc}
+              </p>
+              <button 
+                onClick={() => setSelectedId(null)} 
+                className="mt-4 bg-red-500 text-white px-4 py-2 rounded-md"
               >
-                <div className="text-5xl text-accent">
-                  {icons.find((icon) => icon.id === selectedId)?.icon}
-                </div>
-                <h2 className="text-2xl text-white text-center">
-                  {icons.find((icon) => icon.id === selectedId)?.name}
-                </h2>
-                <p className="text-md text-gray-300 text-center mt-2">
-                  {icons.find((icon) => icon.id === selectedId)?.desc}
-                </p>
-                <button 
-                  onClick={() => setSelectedId(null)} 
-                  className="mt-4 bg-red-500 text-white px-4 py-2 rounded-md"
-                >
-                  Close
-                </button>
-              </motion.div>
+                Close
+              </button>
             </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </section>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 
