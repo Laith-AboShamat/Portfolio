@@ -74,7 +74,7 @@ const webprojects = [
     {
       num: "04",
       category: "Web Application",
-      title: "Nursing Shellular",
+      title: "Nursing Scheduler",
       description: "A modern scheduling and management app designed for nursing professionals and healthcare facilities. Nursing Shellular simplifies shift scheduling, staff communication, and task management, ensuring efficient operations and improved patient care. Built with scalability and reliability in mind, it leverages cloud infrastructure for seamless performance.",
       stack: [
         { name: "React.js" },
