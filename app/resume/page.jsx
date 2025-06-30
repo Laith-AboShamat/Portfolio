@@ -1,7 +1,7 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaAws, FaPython } from "react-icons/fa";
-import {SiTailwindcss, SiNextdotjs, SiFlutter, SiMongodb, SiFirebase, SiExpress,} from "react-icons/si";
+import {SiTailwindcss, SiNextdotjs, SiFlutter, SiMongodb, SiFirebase, SiDotnet, SiPostgresql} from "react-icons/si";
 
 const about = {
   title: 'About me',
@@ -117,7 +117,7 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description: "I have a solid foundation in web and mobile development, with expertise in HTML5, CSS3, JavaScript, Tailwind CSS, and React.js. My backend skills include Node.js, Express, MongoDB, and Next.js, while I also have experience with mobile frameworks like Flutter and Firebase. Additionally, I’m proficient in Python, Figma for design, and cloud services like AWS, ensuring a comprehensive skill set for modern development projects.",
+  description: "I have a solid foundation in web and mobile development, with expertise in HTML5, CSS3, JavaScript, Tailwind CSS, and React.js. My backend skills include Node.js, .NET, MongoDB, and Next.js, while I also have experience with mobile frameworks like Flutter and Firebase. Additionally, I’m proficient in Python, Figma for design, and cloud services like AWS, ensuring a comprehensive skill set for modern development projects.",
   skillList: [
     {
       icon: <FaHtml5/>,
@@ -144,8 +144,12 @@ const skills = {
       name: "node.js",
     },
     {
-      icon: <SiExpress/>,
-      name: "Express",
+      icon: <SiDotnet/>,
+      name: ".Net",
+    },
+    {
+      icon: <SiPostgresql/>,
+      name: "PostgreSQL",
     },
     {
       icon: <SiMongodb/>,

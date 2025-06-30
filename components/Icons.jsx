@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaFigma, FaPython, FaAws } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiNextdotjs, SiFlutter, SiFirebase } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiNextdotjs, SiFlutter, SiFirebase, SiDotnet , SiPostgresql } from 'react-icons/si';
 
 const icons = [
   { icon: <FaHtml5 />, name: "HTML5", id: "html5", desc: "A markup language for creating web pages and web applications." },
@@ -20,6 +20,8 @@ const icons = [
   { icon: <SiFirebase />, name: "Firebase", id: "firebase", desc: "A platform developed by Google for creating mobile and web applications." },
   { icon: <FaPython />, name: "Python", id: "python", desc: "A high-level programming language for general-purpose programming." },
   { icon: <FaAws />, name: "AWS", id: "aws", desc: "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services." },
+  { icon: <SiDotnet />, name: ".Net", id: ".net", desc: "A free, cross-platform, open-source developer platform for building many kinds of applications." },
+  { icon: <SiPostgresql />, name: "PostgreSQL", id: "PGSQL", desc: "A powerful, open-source object-relational database system with over 30 years of active development." },
 ];
 
 const Icons = ({ name }) => {

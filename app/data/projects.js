@@ -56,7 +56,8 @@ const webprojects = [
       stack: [
         { name: "React.js" },
         { name: "Tailwind CSS" },
-        { name: "MongoDB" },
+        { name: ".Net" },
+        { name: "PostgreSQL" },
       ],
       image: [
         "/assets/work/project3/1.png",

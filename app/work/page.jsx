@@ -15,7 +15,7 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 import webprojects from "../data/projects";
-import Icons from "@/components/Icons"; // Import the Icons component
+import Icons from "@/components/Icons";
 
 const Work = () => {
   const [project, setProject] = useState(webprojects[0]);
